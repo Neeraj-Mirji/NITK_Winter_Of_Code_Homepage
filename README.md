@@ -6,7 +6,7 @@ I have used HTML5, CSS3, bootstrap4 and Javascript to make the Homepage.
 
 ### background
 The Homepage displays a moving particle background which is the effect of particle-js.
-The repo contains two js file namely app.js and particle.js which support the animation of the particles. These two file i haved took it from codepen. and i have styled the backround in the css file.
+The repo contains two js file namely app.js and particle.js which support the animation of the particles. These two file i haved took it from codepen and i have styled the background in the css file.
 
 ### nav bar
 The navbar contains various anchor tags which direct to the same page since i have created a static page. The navbar also changes its color when scrolled.
