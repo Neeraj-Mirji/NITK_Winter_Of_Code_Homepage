@@ -1,0 +1,351 @@
+/*importing all required fonts from google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
+
+
+#particles-js
+{
+  height: 100%;
+  background: black;
+  background-position: cover;
+  text-align: center;
+  text-decoration-color: white;
+
+}
+
+h1
+{
+  font-size: 50px;
+}
+
+.how
+{
+   background: #ffc2b3;
+   padding: 100px 100px;
+   margin: 0;
+}
+
+.About
+{
+   background:#ffff33;
+   padding: 100px 100px;
+   margin: 0;
+}
+
+#welcome
+{
+  padding: 100px 100px;
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+}
+
+
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  color: white;
+  max-width: 90%;
+  padding: 2em 3em;
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 0px 2px #131415;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+}
+
+
+
+
+.texts
+{
+  color: blue;
+}
+
+#timelinebody
+{
+    background: #f5d9d5;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*defining font, padding and margin for text in the timelinebody*/
+
+#timelinebody
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat' , sans-serif; 
+
+}
+
+
+
+.timeline
+{
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+
+}
+
+
+/*creating timeline's line*/
+
+.timeline:before
+{
+  content: '';
+  position: absolute;
+  left:50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
+
+}
+
+.timeline ul
+{
+  margin: 0;
+  padding: 0;
+
+}
+
+.timeline ul li
+{
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 40px 40px;
+  box-sizing: border-box;
+}
+
+
+/*alligning text to right to the line for odd text ones*/
+
+.timeline ul li:nth-child(odd)
+{
+  float: left;
+  text-align: right;
+  clear: both;                     /*clears the even part of the text*/
+  
+}
+
+/*alligning text to left to the line for even text ones*/
+
+.timeline ul li:nth-child(even)
+{
+  float: right;
+  text-align: left;
+  clear: both;                        /*clears the odd part of the text*/
+}
+
+
+/*adds padding to the main content*/
+
+.content
+{
+  padding-bottom: 20px;
+
+}
+
+/*creates the circle for odd text and allings it on the line*/
+
+.timeline ul li:nth-child(odd):before
+{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(233,33,99,1);
+  border-radius: 50%;
+  box-shadow:  0 0 0 30px rgb(233,33,99,0.5);
+}
+
+/*creates the circle for even text and allings it on the line*/
+
+.timeline ul li:nth-child(even):before
+{
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgba(233,33,99,1);
+  border-radius: 50%;
+  box-shadow:  0 0 0 30px rgb(233,33,99,0.5);
+}
+
+/*gives color to main text and alligns it*/
+
+.timeline ul li h3
+{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: rgba(233,33,99,1);
+}
+
+
+
+.timeline ul li p
+{
+  margin: 10px 0 0;
+  padding: 0;
+ 
+}
+
+
+.timeline ul li .time h4
+{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+/* puts the date to top and exactly opposite to the odd text and gives border to it gives color*/
+
+.timeline ul li:nth-child(odd) .time
+{
+  position: absolute;
+  top: 12px;
+  right: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background:rgba(233,33,99,1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+
+}
+
+/* puts the date to top and exactly opposite to the even text and gives border to it gives color*/
+
+.timeline ul li:nth-child(even) .time
+{
+  position: absolute;
+  top: 12px;
+  left: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background:rgba(233,33,99,1);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(233,33,99,0.3);
+
+}
+
+#head
+{
+  font-family: 'Karla', sans-serif;
+ font-family: 'Special Elite', cursive;
+  text-align: center;
+  padding-top: 40px;
+}
+
+ .bg-dark
+  {
+    background:transparent !important;
+    transition:0.75s ;
+  }
+
+   .bg-dark.scrolled 
+   {
+      background:#000 !important;
+  }
+
+
+ #wave
+ {
+  margin: 0;
+  padding: 0;
+ }
+
+  section
+  {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background: #3586ff;
+    overflow: hidden;
+  }
+   section .wave
+  {
+    position: absolute;
+    bottom: 0;
+    left : 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+  }
+
+   section .wave.wave1
+ {
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+ }
+
+ @keyframes animate
+{
+  0%
+  {
+    background-position-x:0; 
+  }
+  100%
+  {
+    background-position-x: 1000px; 
+  }
+}
+
+  section .wave.wave2
+ {
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+ }
+
+   section .wave.wave3
+ {
+  animation: animate2 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+ }
+
+ section .wave.wave4
+ {
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 20px;
+ }
+
+  @keyframes animate2
+{
+  0%
+  {
+    background-position-x:0; 
+  }
+  100%
+  {
+    background-position-x: -1000px; 
+  }
+}
+
