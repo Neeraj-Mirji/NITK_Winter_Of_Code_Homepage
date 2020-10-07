@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
 
 
 #particles-js
@@ -23,6 +24,8 @@ h1
   font-size: 50px;
 }
 
+/*styling the how the program works part*/
+
 .how
 {
    background: #ffc2b3;
@@ -30,12 +33,16 @@ h1
    margin: 0;
 }
 
+/*styling the about part*/
+
 .About
 {
-   background:#ffff33;
+   background: #ffff80;
    padding: 100px 100px;
    margin: 0;
 }
+
+/*styling the welcome part*/
 
 #welcome
 {
@@ -45,6 +52,7 @@ h1
 }
 
 
+/*styling the NITK winter of code in first page*/
 
 .text {
   position: absolute;
@@ -65,7 +73,7 @@ h1
 
 .texts
 {
-  color: blue;
+  color: blue;     /* gives color to contribute to the open source*/
 }
 
 #timelinebody
@@ -252,6 +260,9 @@ h1
   padding-top: 40px;
 }
 
+
+/*changes the color of the navbar when srolled*/
+
  .bg-dark
   {
     background:transparent !important;
@@ -264,6 +275,8 @@ h1
   }
 
 
+/*styling the wave forms*/
+
  #wave
  {
   margin: 0;
@@ -275,7 +288,7 @@ h1
     position: relative;
     width: 100%;
     height: 50vh;
-    background: #3586ff;
+    background: #66b3ff;
     overflow: hidden;
   }
    section .wave
@@ -297,6 +310,8 @@ h1
   animation-delay: 0s;
   bottom: 0;
  }
+
+/*making the first waves move */
 
  @keyframes animate
 {
@@ -336,6 +351,9 @@ h1
   animation-delay: -2s;
   bottom: 20px;
  }
+
+
+/*making the second waves move */
 
   @keyframes animate2
 {
